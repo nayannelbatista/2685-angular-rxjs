@@ -60,8 +60,3 @@ export class ListaLivrosComponent {
 }
 
 
-
-function trhowError(arg0: () => Error) {
-  throw new Error('Function not implemented.');
-}
-

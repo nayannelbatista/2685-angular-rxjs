@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Livro } from 'src/app/models/interfaces';
 
 const body = document.querySelector("body");
 
@@ -12,7 +11,7 @@ export class ModalLivroComponent {
 
   constructor() { }
 
-  @Input() livro: Livro;
+  @Input() livro: Object;
   statusModal: boolean = true;
   @Output() mudouModal = new EventEmitter()
 
@@ -29,7 +28,7 @@ export class ModalLivroComponent {
   }
 
   lerPrevia() {
-    window.open(this.livro.previewLink, '_blank');
+    window.open( '_blank');
   }
 
 }
